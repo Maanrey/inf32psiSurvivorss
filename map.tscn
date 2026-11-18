@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bgpqmcsjj47p5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epqt8"]
+size = Vector2(681, 546)
+
+[sub_resource type="Gradient" id="Gradient_e6lj2"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_napwp"]
+gradient = SubResource("Gradient_e6lj2")
+
+[node name="Map" type="Node2D" unique_id=445889262]
+
+[node name="TestMap" type="StaticBody2D" parent="." unique_id=423296311]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TestMap" unique_id=502149936]
+position = Vector2(330.5, 263)
+shape = SubResource("RectangleShape2D_epqt8")
+
+[node name="Sprite2D" type="Sprite2D" parent="TestMap" unique_id=1804872238]
+position = Vector2(330, 259.5)
+scale = Vector2(11.3125, 9.109374)
+texture = SubResource("GradientTexture2D_napwp")
